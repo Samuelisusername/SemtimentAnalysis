@@ -15,7 +15,7 @@ nltk.download('stopwords')
 
 text = open('read.txt', encoding='utf8 ').read()
 lower_case = text.lower()
-cleaned_text =  lower_case.translate(str.maketrans('','',string.punctuation)) #do we really need to do that :(
+cleaned_text =  lower_case.translate(str.maketrans('','',string.punctuation)) 
 tokenized_text = cleaned_text.split()
 
 
